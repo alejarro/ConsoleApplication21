@@ -64,7 +64,7 @@ void carro4(int x, int y)
 {
 	Console::BackgroundColor = ConsoleColor::Black; Console::ForegroundColor = ConsoleColor::Blue;
 	cursor(x, y + 0); cout << ".----.___"; Console::BackgroundColor = ConsoleColor::Black; Console::ForegroundColor = ConsoleColor::Blue;
-	cursor(x, y + 1); cout << "'-O---O-í";
+	cursor(x, y + 1); cout << "'-O---O-‚Äô";
 }
 void borra_carro4(int x, int y)
 {
@@ -306,7 +306,7 @@ void ranking(int x, int y)
 
 
 
-// FunciÛn para mostrar el ranking de ganadores al final de todas las carreras                          
+// Funci√≥n para mostrar el ranking de ganadores al final de todas las carreras                          
 void mostrar_ranking(int cant_ganadas_1, int cant_ganadas_2, int cant_ganadas_3, int cant_ganadas_4, int cant_ganadas_5, int cant_ganadas_6)
 {
 	int ganadas[6] = { cant_ganadas_1, cant_ganadas_2, cant_ganadas_3, cant_ganadas_4, cant_ganadas_5, cant_ganadas_6 };
@@ -315,7 +315,7 @@ void mostrar_ranking(int cant_ganadas_1, int cant_ganadas_2, int cant_ganadas_3,
 		if (ganadas[i] > max_ganadas) max_ganadas = ganadas[i];
 	}
 
-	// Contar cu·ntos carros tienen la m·xima cantidad de victorias
+	// Contar cu√°ntos carros tienen la m√°xima cantidad de victorias
 	int cantidad_ganadores = 0;
 	for (int i = 0; i < 6; i++) {
 		if (ganadas[i] == max_ganadas) cantidad_ganadores++;
@@ -607,11 +607,13 @@ int main() {
 	Console::Clear();
 	//Secuencia de CREDITOS
 	creditos_titulo(25, 3);
-	creditos(25, 13);
+	creditos(25, 13);cout<<":v";
 	//DESPEDIDA
 	Console::Clear();
 	despedida(25, 20);
 
+
+	
 
 	system("pause>0");
 	return 0;
